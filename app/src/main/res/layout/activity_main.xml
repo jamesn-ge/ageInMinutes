@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/background"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <TextView
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:text="Calculate your"
+       android:layout_centerHorizontal="true"
+       android:layout_marginTop="20dp"
+       android:textSize="26sp"
+       android:textStyle="bold"
+       android:textAllCaps="true"
+       android:id="@+id/calYour"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="AGE"
+        android:layout_below="@id/calYour"
+        android:layout_marginTop="8dp"
+        android:textSize="27sp"
+        android:textColor="@color/white"
+        android:background="@android:color/holo_blue_light"
+        android:paddingLeft="10dp"
+        android:textStyle="bold"
+        android:paddingRight="10dp"
+        android:id="@+id/calAge"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IN MINUTES"
+        android:textSize="26sp"
+        android:layout_below="@id/calAge"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:id="@+id/calMinutes"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_below="@id/calMinutes"
+        android:layout_marginTop="20dp"
+        android:background="@color/white"
+        android:text="Select date"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/pickDateBtn"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Selected Date"
+        android:layout_below="@id/pickDateBtn"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/selectedDateView"
+        android:textStyle="bold"
+        android:textSize="20sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/selectedDateView"
+        android:id="@+id/selectedDateTxt"
+        android:text="Selected Date"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_below="@id/selectedDateTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:id="@+id/ageInMinutes"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your age in minutes"
+        android:layout_below="@id/ageInMinutes"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"/>
+
+
+
+</RelativeLayout>
